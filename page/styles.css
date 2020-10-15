@@ -1,0 +1,265 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+}
+
+body {
+	background-color: rgb(36, 36, 36);
+	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	line-height: 1.3333;
+	color: #eeeeee;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 3rem;
+	color: #eeeeee;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	border-bottom: .0625rem solid #606060;
+	color: #eeeeee;
+}
+
+h3 {
+	margin: 2rem 0 1rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #98afd4;
+	border-bottom: .0625rem dotted #606060;
+}
+
+h4 {
+	color: #75a7f2;
+	font-weight: bold;
+	margin: 2rem 0 1rem;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+footer {
+  height: 50px;
+}
+
+ /* Style the list */
+ol.breadcrumb {
+	font-size: .8rem;
+	color: #999999;
+}
+
+/* Display list items side by side */
+ol.breadcrumb li {
+    display: inline;
+}
+
+ol.breadcrumb li+li:before {
+    content: " \00BB ";
+}
+
+button {
+	border: 0;
+	font-size: 1em; /* avoid shrinkage */
+	font-family: inherit;
+	padding: .5rem .75rem;
+	background-color: rgb(16, 82, 225);
+	color: white;
+	cursor: pointer;
+	line-height: 1rem;
+}
+
+button:hover {
+	background-color: rgb(5, 52, 185);
+}
+
+footer {
+	display: flex;
+	font-size: .8rem;
+	flex-wrap: wrap;
+	align-items: baseline;
+	color: #999999;
+}
+
+
+
+
+/* Globals... */
+
+a {
+	color: #ffb200; /* orange */
+	text-decoration: none;
+	cursor: pointer; /* even if no href */
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #ffdC2A; /* yellow */
+}
+
+h5 {
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+p.rant {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+blockquote {
+	margin: 1rem 0 1rem 2rem;
+}
+
+blockquote > *:first-child {
+	margin-top: 0;
+}
+
+blockquote > *:last-child {
+	margin-bottom: 0;
+}
+
+hr {
+	height: 0;
+	border-width: 0;
+	border-top: .0625rem dotted #a0a0a0;
+}
+
+big {
+	/* can be nested */
+	font-size: 1.25em;
+}
+
+small {
+	/* can be nested */
+	font-size: .8em;
+}
+
+sup {
+	font-size: .8em;
+	vertical-align: super;
+}
+
+sub {
+	font-size: .8em;
+	vertical-align: sub;
+}
+
+var,
+em,
+i {
+	font-style: italic;
+}
+
+i em,
+em i {
+	font-style: normal;
+}
+
+strong {
+	font-weight: bold;
+}
+
+pre {
+	font-size: .8rem;
+	margin: 1rem 0 1rem 2rem;
+	white-space: pre-wrap;
+	font-family: consolas, courier new, monospace;
+	color: #ffd980; /* yellow */
+
+	/* for `re_ar` */
+	direction: ltr;
+}
+
+code,
+tt,
+kbd {
+	font-family: consolas, courier new, monospace;
+	color: #ffd980; /* yellow */
+
+	/* for `re_ar` */
+	direction: ltr;
+}
+
+var {
+	color: #78C6B9; /* pale green */
+}
+
+table {
+	border-collapse: collapse;
+	font-size: .8rem;
+
+	/* extra-wide tables, you can just scroll to see */
+	display: block;
+	overflow: auto;
+}
+
+th {
+	border: .0625rem solid #555555;
+	font-weight: bold;
+	color: #75a7f2;
+	padding: .5rem;
+}
+
+td {
+	border: .0625rem solid #555555;
+	padding: .5rem;
+}
+
+th > *:first-child,
+td > *:first-child {
+	margin-top: 0;
+}
+
+th > *:last-child,
+td > *:last-child {
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	margin: 1rem 0;
+	padding-inline-start: 1.5rem;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ul ul {
+	list-style-type: circle;
+}
+
+ul ul ul {
+	list-style-type: square;
+}
+
+dl {
+	margin: 1rem 0 1rem 2rem;
+}
+
+dt {
+	margin: 1rem 0;
+	font-weight: bold;
+}
+
+dd {
+	margin: 1rem 0;
+}
